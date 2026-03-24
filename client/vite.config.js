@@ -16,6 +16,9 @@ export default defineConfig({
     host: "0.0.0.0",
     port: 5173,
     hmr: false,
-    watch: null,
+    watch: {
+      usePolling: true,
+      interval: 100, // Check every 100ms
+    },
   },
 });
